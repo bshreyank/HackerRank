@@ -73,7 +73,7 @@ import java.util.Scanner;
          arr.add(sc.nextInt());
         }
 
-        sc.close();
+        
         //System.out.println(arr);
 
         //=======================================>
