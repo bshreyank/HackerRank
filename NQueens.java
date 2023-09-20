@@ -1,5 +1,20 @@
 public class NQueens {
 
+    public static void nQueens(char board[][], int row){
+        //base case
+        if(row == board.length){
+            printBoard(board);
+            return;
+        }
+
+        //column loop
+        for(int j=0;j<board.length;j++){
+            board[row][j]='Q';
+            nQueens(board,row+1);   //function call
+            board[row][j]='X';      //backtracking step
+        }
+    }//nQueens
+
     
 
     public static void main(String[] args) {
@@ -12,6 +27,6 @@ public class NQueens {
             }
         }
         nQueens(board,0);
-    }
+    }//main
     
-}
+}//class
