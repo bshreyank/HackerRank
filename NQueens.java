@@ -1,6 +1,5 @@
 public class NQueens {
 
-<<<<<<< HEAD
     public static boolean isSafe(char board[][], int row, int col){
         //vertical up
         for(int i=row-1;i>=0;i--){
@@ -27,8 +26,6 @@ public class NQueens {
 
     }//isSafe
 
-=======
->>>>>>> 2052944940a649edb5e9f3eb15497611ca0ede4b
     public static void nQueen(char board[][], int row){
         //base case
         if(row == board.length){
